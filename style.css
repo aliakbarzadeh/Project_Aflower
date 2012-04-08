@@ -1,0 +1,246 @@
+*{
+	padding:0;
+	margin:0;
+}
+@font-face {
+    font-family:'BRoyaRegular';
+    src: url('broya-webfont.eot');
+    src: url('broya-webfont.eot?#iefix') format('embedded-opentype'),
+         url('broya-webfont.woff') format('woff'),
+         url('broya-webfont.ttf') format('truetype'),
+         url('broya-webfont.svg#BRoyaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	min-height:1349px;
+	font-family:'BRoyaRegular';
+}
+/*body > div{
+	outline:1px dashed orange;
+}
+body > div > div{
+	outline:1px dashed orange;
+}
+body > div > div > div{
+	outline:2px dashed red;
+}*/
+
+
+div.container-header{
+	min-height:320px;
+	background-image:url(images/bg-header.jpg);
+}
+
+div.container-banner{
+	min-height:260px;
+	background-color:#C30075;
+}
+div.container-content{
+	min-height:640px;
+	background-color:#FEFEF6;
+}
+div.container-footer{
+	min-height:115px;
+	background-color:#C30075;
+}
+div[class|=container] > div{
+	width:980px;
+	
+	margin:0 auto;
+	padding-top:1px;
+}
+div.container-content div.window {
+	min-height:640px;
+	overflow:hidden;
+	position:relative;
+}
+div.container-content div#train {
+	width:10000px; /* x>5*980 */
+	position:absolute;
+	top:0;
+	left:0;
+	transition:all 1s;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+}
+
+div.container-content div#train > div{ /* vagon ha */
+	float:left;
+	
+}
+
+
+
+div.header div.toppanel{
+	width:960px;
+	min-height:50px;
+	margin:20px 5px 0 5px;
+}
+div.toppanel ul{
+	list-style-type:none;
+}
+div.toppanel ul li{
+	float:right;
+	color:red;
+}
+div.toppanel ul li a:hover{
+	color:#EFEFEF;
+}
+div.toppanel ul li a{
+	text-decoration:none;
+	padding:15px 20px;
+	font-family:'BRoyaRegular';
+	font-size:16px;
+	color:#fff;
+	display:block;
+}
+div.header div.midllepanel{
+	width:301px;
+	min-height:163px;
+	margin:30px 0 0 20px;
+}
+
+div.banner div.leftpanel{
+	min-height:166px;
+	width:216px;
+	float:left;
+	margin-left:23px;
+}
+div.banner div.rightpanel{
+	width:216px;
+	min-height:166px;
+	float:left;
+	margin-left:23px;
+}
+div.banner div.contentpanel{
+	width:470px;
+	min-height:424px;
+	margin-right:6px;
+	margin-left:auto;
+	margin-top:-180px;
+	direction:rtl;
+}
+div#content div.leftpanel{
+	min-height:580px;
+	margin:20px 0 0px 20px;
+	width:465px;
+	float:left;
+}
+div#content div.rightpanel{
+	width:455px;
+	min-height:580px;
+	margin:20px 20px 0px 20px;
+	float:right;
+}
+div.footer div.leftpanel{
+	min-height:30px;
+	width:200px;
+	margin:40px 20px;
+	float:left;
+	position:relative;
+}
+div.footer div.rightpanel{
+	width:630px;
+	min-height:30px;
+	margin:40px 20px;
+	float:right;
+	font-family:'BRoyaRegular';
+	font-size:13px;
+	direction:rtl;
+	color:#E794C6;
+}
+div.footer div.leftpanel a.facebook{
+	background-image:url(images/icons.gif);
+	background-repeat:no-repeat;
+	display:block;
+	width:30px;
+	height:30px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	
+}
+div.footer div.leftpanel ul{
+	list-style-type:none;	
+}
+div.footer div.leftpanel a.twitter{
+	background-image:url(images/icons.gif);
+	background-repeat:repeat-y;
+	display:block;
+	width:40px;
+	height:30px;
+	position:absolute;
+	left:50px;
+	top:0px;
+	background-position:0 71px;
+	
+}
+div#content div.leftpanel ul li{
+	float:left;
+	list-style:none;
+	margin:0 10px 5px 0;
+	padding:0 0 10px 0;	
+}
+div#content div.leftpanel ul li span {
+	color:#857B63;
+	display:block;
+	font-size:13px;
+	text-align:center;
+	padding-top:5px;
+}
+div#content div.leftpanel ul li a{
+	text-decoration:none;
+}
+div#content div.leftpanel h4{
+	background:url(images/icons.gif) no-repeat left -62px;	
+	float: left;
+	margin: 0 0 0 140px;
+	padding: 0 0 0 30px;
+}
+div#content div.leftpanel h4 a{
+	background: url(images/icons.gif) no-repeat right -86px;
+	color:#857b63;
+	display:block;	
+	height:16px;
+	font-family:'BRoyaRegular';
+	font-size:14px;
+	margin: 0;
+	padding: 0 30px 0 0;
+	text-decoration: none;
+}
+p{
+	font-family:'BRoyaRegular';
+	font-size:16px;
+	text-align:justify;
+	direction:rtl;
+	line-height:30px;
+	color:#857B63;
+	text-shadow:1px 1px #CFCFCF;
+}
+h2{
+	font-family:'BRoyaRegular';
+	font-size:18px;
+	text-align:justify;
+	direction:rtl;
+	line-height:30px;
+	color:#957B63;
+	text-shadow:1px 1px #CFCFCF;	
+}
+div.topfooter{
+	height:35px;
+}
+div.topfooter div.left{
+	float:left;
+	width:30px;
+}
+div.topfooter div.right{
+	float:right;
+	width:30px;
+}
+.clear{
+	clear:both !important;
+	width:0 !important;
+	height:0 !important;
+}
